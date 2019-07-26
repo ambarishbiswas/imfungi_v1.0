@@ -73,20 +73,24 @@ identify metagenomic Fungi (imFungi): A novel fungi prediction tool for (meta)ge
                                       	                          	FASTA sequence file is expected ]
 
 <h5>Options for blast based intron search:</h5>
+
  	-blastn_word_size                     28                        [Default is set to 28; Although a smaller word length (e.g. 21) can identify more fungal sequences, but it also increases the risk of false predictions;]
 
 
 <h5>Options for Taxonomy search:</h5>
+
  	-taxa_assignment_of_contigs           0/1                       [Default is set to 1, i.e. the taxonomy will be predicted on assembled contigs;]
  	-taxa_assignment_of_reads             0/1                       [Default is set to 1, i.e. the taxonomy will be predicted on the inputted reads (or reads from the subsampled reads file if 
                                       	                          	opted); ]
 
 
 <h5>Options for additional reporting:</h5>
+
  	-kraken_style_output                  0/1                       [Default is set to 0; Use '1' to create a output file similar to what kraken, CLARKS and kaiju provides]
 
 
 <h5>Other options:</h5>
+
  	-T/-threads                           N                         [By default the program uses 4 threads; Any positive integer is accepted]
  	-q/-quiet                             0/1                       [Default is set to 0, which shows program step-by-step logs; Use '1' to turn of the logging; Note, a file log.log will still 
                                       	                          	be created in the output_folder ]
@@ -103,6 +107,7 @@ identify metagenomic Fungi (imFungi): A novel fungi prediction tool for (meta)ge
 
 
 <h5>General information:</h5>
+
   For all queries, bugs and updates (and even suggestions how to make imFungi better) please email Ambarish Biswas [ambarishbiswas@gmail.com]
   Latest version and other informationcan can be found at: https://github.com/ambarishbiswas/imfungi_v1.0
 
