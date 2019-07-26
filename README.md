@@ -35,7 +35,7 @@ identify metagenomic Fungi (imFungi): A novel fungi prediction tool for (meta)ge
 
 
 
-  Options for input sequence(s) in FASTQ format:
+<h5>Options for input sequence(s) in FASTQ format:</h5>
   
  	-s/-r                                 input_fastq_sequence_file [either gzip compressed (i.e. with extension .gz) or uncompressed FASTQ file. Supported extensions are .fq, .fastq ]
  	-1                                    forward_fastq_file        [Specify the forward reads FASTQ file of paired-end libraries. Supported extensions are .fq, .fastq with/without .gz]
@@ -43,13 +43,13 @@ identify metagenomic Fungi (imFungi): A novel fungi prediction tool for (meta)ge
  	--12                                  interleaved_fastq_file    [Specify a FASTQ file with forward and reverse reads interleaved. Supported extensions are .fq, .fastq with/without .gz]
 
 
-  Options for publicly available (meta)genomic NGS reads:
+<h5>Options for publicly available (meta)genomic NGS reads:</h5>
   
  	-sra                                  SRA_Accession             [Accession of (meta)genomic NGS reads from NCBI SRA database]
  	-ena                                  ENA_Accession             [Accession of (meta)genomic NGS reads from ENA database]
 
 
-  Options for reads specific operations:
+<h5>Options for reads specific operations:</h5>
   
  	-read_error_correction                0/1                       [Default is set to 1; imFungi uses BBmap suite of tools for error correction] 
  	-min_read_length                      20                        [Default value set to 20]
@@ -61,7 +61,8 @@ identify metagenomic Fungi (imFungi): A novel fungi prediction tool for (meta)ge
 
 
 
-  Options for reads assembly:
+<h5>Options for reads assembly:</h5>
+
  	-use_reference_sequence_from_assembly 0/1                       [Default is set to 1, which means assembly will be done on the inputted reads/sequences in the inputted prior constructing 
                                       	                          	a sample specific reference library of marker sequence, which will then be used for classifying archaea, bacteria and viral 
                                       	                          	reads ]
@@ -71,21 +72,21 @@ identify metagenomic Fungi (imFungi): A novel fungi prediction tool for (meta)ge
                                       	                          	a sample specific reference library of marker sequence. Either gzip compressed (i.e. with extension .gz) or uncompressed 
                                       	                          	FASTA sequence file is expected ]
 
-  Options for blast based intron search:
+<h5>Options for blast based intron search:</h5>
  	-blastn_word_size                     28                        [Default is set to 28; Although a smaller word length (e.g. 21) can identify more fungal sequences, but it also increases the risk of false predictions;]
 
 
-  Options for Taxonomy search:
+<h5>Options for Taxonomy search:</h5>
  	-taxa_assignment_of_contigs           0/1                       [Default is set to 1, i.e. the taxonomy will be predicted on assembled contigs;]
  	-taxa_assignment_of_reads             0/1                       [Default is set to 1, i.e. the taxonomy will be predicted on the inputted reads (or reads from the subsampled reads file if 
                                       	                          	opted); ]
 
 
-  Options for additional reporting:
+<h5>Options for additional reporting:</h5>
  	-kraken_style_output                  0/1                       [Default is set to 0; Use '1' to create a output file similar to what kraken, CLARKS and kaiju provides]
 
 
-  Other options:
+<h5>Other options:</h5>
  	-T/-threads                           N                         [By default the program uses 4 threads; Any positive integer is accepted]
  	-q/-quiet                             0/1                       [Default is set to 0, which shows program step-by-step logs; Use '1' to turn of the logging; Note, a file log.log will still 
                                       	                          	be created in the output_folder ]
@@ -101,7 +102,7 @@ identify metagenomic Fungi (imFungi): A novel fungi prediction tool for (meta)ge
 
 
 
-General information:
+<h5>General information:</h5>
   For all queries, bugs and updates (and even suggestions how to make imFungi better) please email Ambarish Biswas [ambarishbiswas@gmail.com]
   Latest version and other informationcan can be found at: https://github.com/ambarishbiswas/imfungi_v1.0
 
