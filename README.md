@@ -1,4 +1,4 @@
-#### imFungi version:V1.0 
+imFungi version:V1.0 
 identify metagenomic Fungi (imFungi): A novel fungi prediction tool for (meta)genomes.
 
 
